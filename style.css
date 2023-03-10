@@ -9,13 +9,14 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 6fr;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(45, 45, 45);
 }
 
 .header {
     grid-column: 2/5;
     grid-row: 1/2;
     background-color: aliceblue;
-    padding-top: 10px;
+    padding-top: 15px;
     box-shadow: 2px 2px grey;
     margin-bottom: .5px;
 }
@@ -30,6 +31,8 @@ body {
 
 .left {
     display: flex;
+    align-items: center;
+    gap:10px;
 }
 
 .top {
@@ -37,6 +40,11 @@ body {
     align-items: center;
 }
 
+form{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
 #query {
     border-radius: 10px;
     height: 25px;
@@ -45,7 +53,7 @@ body {
 }
 
 .bottom {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .account {
@@ -69,7 +77,7 @@ button {
     background-color: #064e3b;
     color: white;
     padding-left: 30px;
-    padding-top: 10px;
+    padding-top: 20px;
     
 }
 
@@ -77,20 +85,49 @@ button {
     padding-left: 0px;
 }
 
+.sidebar > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px
+}
+
 .sidebar > :nth-child(2) {
     margin-bottom: 60px;
 }
 
-.sidebar > ul > li > img {
+.sidebar > ul > li >img {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
-ul > li {
-    list-style: none;
-    margin:20px;
+.logo {
     display: flex;
     align-items: center;
+    gap:3px;
+}
+.logo > img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    width: 40px;
+}
+
+.announcements > ul > li {
+    list-style: none;
+    margin:20px;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap:15px;
+}
+
+ul > li > h6 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+ul > li > p {
+    margin-top: 0px;
+    font-size: 12px;
 }
 
 img {
@@ -98,8 +135,8 @@ img {
 }
 
 .left > img {
-    height:62px;
-    width: 45px;
+    height:57px;
+    width: 40px;
 }
 
 .account > :nth-child(2) {
@@ -131,6 +168,11 @@ img {
     border-radius: 10px;
     box-shadow: .5px .5px .5px .5px rgb(168, 168, 168);
     border-left: solid 8px rgb(196, 187, 177);
+    padding: 10px;
+}
+
+.card > h5 {
+    margin-top: 10px;
 }
 
 .cards {
@@ -157,7 +199,9 @@ img {
     background-color: aliceblue;
     border-radius: 10px;
     box-shadow: .5px .5px .5px .5px rgb(168, 168, 168);
+    padding-left: 0px;
 }
+
 
 .trending {
     grid-column: 4/5;
@@ -166,6 +210,7 @@ img {
     flex-direction: column;
     padding-right: 50px;
     padding-bottom: 25px;
+    padding-left: 0px;
 }
 
 .trends {
@@ -174,7 +219,30 @@ img {
     background-color: aliceblue;
     border-radius: 10px;
     box-shadow: .5px .5px .5px .5px rgb(168, 168, 168);
+    padding-inline-start: 0px;
 }
+
+.trending > ul > li {
+    list-style: none;
+    margin: 20px;
+    font-size: 12px;
+}
+
+#content1::after{
+    content: "\a";
+    white-space: pre;
+}
+
+li.trend {
+    display: flex;
+    gap: 20px;
+    align-items:start
+}
+
+.trending > ul > li >img {
+    width: 40px;
+}
+
 
 
 
